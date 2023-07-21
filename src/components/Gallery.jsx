@@ -46,7 +46,7 @@ const Gallery = () => {
                             <h5 className="text-2xl lg:text-4xl">{heading}</h5>
                         </div>
 
-                        <div className="container px-4 grid grid-cols-2 gap-3 lg:flex lg:flex-wrap">
+                        <div className="container px-4 grid grid-cols-3 gap-3 lg:flex lg:flex-wrap">
                             {images.map((image) => <div key={id}>
                                 <img src={image} alt="nnnedlog-portrait" className="rounded-md" />
                             </div>)}

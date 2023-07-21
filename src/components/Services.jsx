@@ -11,7 +11,7 @@ const ServicesOffered = () => {
                         <div className="p-4  bg-gradient-to-b from-transparent to-borderBlue backdrop-blur-md w-full flex justify-center items-center">
                             <img src={coverImg} alt={slug} className="" />
                         </div>
-                        <div className="font-climate text-md text-white py-5 px-5 lg:text-lg lg:pl-11 w-full">{title}</div>
+                        <div className="font-climate text-md text-white py-5 px-3 lg:text-lg lg:px-11 w-full">{title}</div>
                     </div>
                     )}
                 </div>

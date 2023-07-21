@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect } from 'react';
 import logo from '/logo.svg';
-import { Squash as Hamburger } from 'hamburger-react';
+// import { Squash as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
-    const [isOpen, setOpen] = useState(false);
-    const hamburgerRef = useRef(null);
+    // const [isOpen, setOpen] = useState(false);
 
     useEffect(() => {
 
@@ -18,15 +17,18 @@ const Navbar = () => {
                     <div className='flex items-center gap-16 hidden lg:flex'>
                         <p>About</p>
                         <p>Gallery</p>
-                        <button className='font-semibold bg-white px-3 py-2 rounded-md text-mainBlue cursor-pointer hover:text-mainBlue hover:bg-textBlue'>Request a Quote</button>
+                        <button className='font-semibold bg-white px-3 py-2 rounded-md text-mainBlue cursor-pointer hover:border-2 hover:border-borderBlue hover:bg-transparent hover:text-white'>Get a Quote</button>
                     </div>
-                    <div className='lg:hidden' ref={hamburgerRef}>
-                        <Hamburger color='#8C8CCA' size={25} toggle={setOpen} toggled={isOpen} />
+                    <div className='lg:hidden'>
+                        {/* <Hamburger color='#8C8CCA' size={25} toggle={setOpen} toggled={isOpen} /> */}
+                        <a href="https://wa.me/+2347018448727" target='_blank' rel='noreferrer'>
+                            <button className='bg-transparent border-borderBlue border-2 text-white py-3 px-3 rounded-lg'>Get a Quote</button>
+                        </a>
                     </div>
 
                 </div>
             </nav>
-            {isOpen && <div className='bg-mainBlue/90 border-r  border-slate-800 w-[60%] h-[calc(100vh-89px)] lg:hidden z-50'>
+            {/* {isOpen && <div className='bg-mainBlue/90 border-r  border-slate-800 w-[60%] h-[calc(100vh-89px)] lg:hidden z-50'>
                 <div className='relative border-yellow-300 px-10 py-10 w-full h-full text-white font-quicksand backdrop-blur-lg flex flex-col justify-between'>
                     <div className='flex flex-col gap-5'>
                         <p className=' py-3 px-4'>About</p>
@@ -36,7 +38,7 @@ const Navbar = () => {
                         <button className='font-semibold bg-white w-full px-3 py-2 rounded-md text-mainBlue cursor-pointer hover:text-mainBlue hover:bg-textBlue'>Request a Quote</button>
                     </div>
                 </div>
-            </div>}
+            </div>} */}
         </div>
     )
 }

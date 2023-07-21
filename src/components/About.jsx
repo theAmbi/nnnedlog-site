@@ -31,7 +31,7 @@ const About = () => {
                 </div>
 
                 <div className='w-28 h-28 bg-blurBlue blur-[130px] mt-32 absolute right-0 top-[50%] lg:w-44 lg:h-44 lg:top-[10%] lg:blur-[160px]' />
-                <div className='w-28 h-28 bg-blurRed blur-[130px] absolute -left-20 bottom-28  lg:w-60 lg:h-60 lg:top-[80%] lg:blur-[160px]' />
+                <div className='w-28 h-28 bg-blurRed/40 blur-[130px] absolute -left-20 bottom-28  lg:w-60 lg:h-60 lg:top-[80%] lg:blur-[160px]' />
             </div>
         </section>
     )
