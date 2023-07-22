@@ -26,7 +26,7 @@ const Gallery = () => {
     return (
         <section className="w-full h-fit pt-20 bg-mainBlue pb-20" ref={galleryRef}>
             <div className="container">
-                <div ref={titleRef}>
+                <div ref={titleRef} className="px-10">
                     <TextHeading heading={'Some of my past projects'} />
                 </div>
                 <div className=" pt-20 container px-10 pb-10 lg:pb-20">

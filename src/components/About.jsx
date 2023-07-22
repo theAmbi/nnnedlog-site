@@ -46,7 +46,7 @@ const About = () => {
                     <p className=' md:text-lg md:max-w-lg md:text-right lg:text-right lg:text-2xl lg:max-w-2xl'>Years after, and Adobe Draw with Golden has been changed to NNNedlog. <br /><br />
                         With added services like NFT art, merch design and more, NNNedlog is better suited to serve your art needs. <br /><br />
                         <span className='font-bold text-textBoldBlue'> So what are you waiting for? Reach out today or Darth Maul will tickle your feet at night</span> <br /><br />
-                        <button className='font-semibold text-mainBlue px-6 py-4  bg-white rounded-lg mt-5 lg:mt-16 '>Request an illustration</button>
+                        <a href='https://wa.me/+2347018448727' target='_blank' rel='noreferrer' className='font-semibold text-mainBlue px-6 py-4  bg-white rounded-lg mt-5 lg:mt-16 '>Request an illustration</a>
                     </p>
 
                     <img src={darthMaul} alt="darth maul star wars vector illustration by nnnedlog" className='rounded-lg md:w-56 md:h-60 lg:w-[381px] lg:h-[493px]' />
