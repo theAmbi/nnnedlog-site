@@ -21,15 +21,17 @@ const App = () => {
   return (
     <>
       {/* {isloading ? <Preloader /> : <div> */}
-      <Navbar />
-      <Hero />
-      <About />
-      <ServicesOffered />
-      <Gallery />
-      <ShopMyMerch />
-      <MySocials />
-      <CallToAction />
-      <Footer />
+      <div className="bg-mainBlue">
+        <Navbar />
+        <Hero />
+        <About />
+        <ServicesOffered />
+        <Gallery />
+        <ShopMyMerch />
+        <MySocials />
+        <CallToAction />
+        <Footer />
+      </div>
       {/* </div>} */}
     </>
   )
