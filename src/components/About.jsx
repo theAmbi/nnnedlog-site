@@ -1,12 +1,42 @@
+import { useRef, useEffect } from 'react'
 import hoodie from '../images/illustrations/about/hoodie-woman.jpeg';
 import darthMaul from '../images/illustrations/about/darth-maul.jpg';
 import { TextHeading } from './utils/Heading';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+    const aboutRef = useRef(null);
+    const aboutContainerRef = useRef(null);
+    const titleRef = useRef(null);
+
+    useEffect(() => {
+        gsap.from(titleRef.current, {
+            duration: 1,
+            scale: .5,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: aboutRef.current,
+                start: 'top center',
+            }
+        })
+        gsap.from(aboutContainerRef, {
+            duration: 1.3,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: aboutRef.current,
+                start: 'top center',
+            }
+        })
+    }, [])
+
     return (
-        <section className="w-full h-fit pb-5 bg-mainBlue">
-            <div className="container px-10 py-5 relative lg:px-4">
-                <TextHeading heading={'What the NNNedlog brand is all about'} />
+        <section className="w-full h-fit pb-5 bg-mainBlue" ref={aboutRef}>
+            <div className="container px-10 py-5 relative lg:px-4" ref={aboutContainerRef}>
+                <div ref={titleRef}>
+                    <TextHeading heading={'What the NNNedlog brand is all about'} />
+                </div>
 
                 <div className=' font-quicksand text-textBlue mt-20 flex flex-col gap-10 md:flex-row lg:flex-row lg:justify-between lg:py-10 lg:items-center'>
                     <p className=' md:text-lg md:max-w-lg lg:text-2xl lg:max-w-2xl'>The rise of the NNNedlog brand is quite interesting.

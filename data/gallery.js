@@ -1,6 +1,6 @@
 export const portraitsDetails = [
     {
-        id: 1,
+        id: 13,
         icon: '../src/images/icons/gallery/portraits.svg',
         heading: 'Portraits',
         images: [
@@ -19,7 +19,7 @@ export const portraitsDetails = [
 
 export const coverArtDetails = [
     {
-        id: 2,
+        id: 23,
         icon: '../src/images/icons/gallery/cover-art.svg',
         heading: 'Cover Art',
         images: [
@@ -38,7 +38,7 @@ export const coverArtDetails = [
 
 export const posterDetails = [
     {
-        id: 3,
+        id: 33,
         icon: '../src/images/icons/gallery/posters.svg',
         heading: 'Posters',
         images: [
@@ -58,7 +58,7 @@ export const posterDetails = [
 
 export const apparelDetails = [
     {
-        id: 4,
+        id: 43,
         icon: '../src/images/icons/gallery/apparel-design.svg',
         heading: 'Apparel Design',
         images: [

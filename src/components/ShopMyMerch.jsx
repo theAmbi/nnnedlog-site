@@ -2,11 +2,33 @@ import { TextHeading } from "./utils/Heading"
 import teepublic from '../images/logos/teepublic.svg'
 import redbubble from '../images/logos/redbubble.svg'
 import teespring from '../images/logos/teespring.svg'
+import { useEffect, useRef } from "react"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 const ShopMyMerch = () => {
+    const titleRef = useRef(null);
+    const shopContainerRef = useRef(null);
+
+    useEffect(() => {
+        gsap.from(titleRef.current, {
+            duration: 1,
+            scale: .5,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: shopContainerRef.current,
+                start: 'top center',
+            }
+        })
+    }, [])
+
     return (
-        <section className="w-full h-fit py-20 bg-mainBlue">
+        <section className="w-full h-fit py-20 bg-mainBlue" ref={shopContainerRef}>
             <div className="container px-10 lg:px-0 z-20">
-                <TextHeading heading={'Shop my merch from various stores'} />
+                <div ref={titleRef}>
+                    <TextHeading heading={'Shop my merch from various stores'} />
+
+                </div>
                 <div className="w-20 h-20  lg:w-32 lg:h-32 blur-[200px] bg-blurGreen -z-10" />
 
                 <div className="pt-20 flex gap-10 flex-wrap justify-center">

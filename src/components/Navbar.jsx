@@ -1,23 +1,25 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import logo from '/logo.svg';
-// import { Squash as Hamburger } from 'hamburger-react';
+import { gsap } from 'gsap';
 
 const Navbar = () => {
-    // const [isOpen, setOpen] = useState(false);
-
+    const navContainer = useRef(null)
     useEffect(() => {
-
-    })
-
+        gsap.from(navContainer.current, {
+            duration: 1,
+            y: "-100%",
+            opacity: 0,
+        })
+    }, [])
     return (
         <div className='fixed top-0 left-0 w-full h-[89px] bg-mainBlue/90 z-50 border-b border-b-slate-800 backdrop-blur-lg'>
-            <nav className="w-full h-[89px] flex items-center justify-between container px-5 ">
+            <nav className="w-full h-[89px] flex items-center justify-between container px-5" ref={navContainer}>
                 <div><img src={logo} alt="nnnedlog-logo" className='w-[80%] lg:w-full' /></div>
                 <div className='flex items-center justify-end text-white font-quicksand gap-5 relative'>
                     <div className='flex items-center gap-16 hidden lg:flex'>
-                        <p>About</p>
-                        <p>Gallery</p>
-                        <button className='font-semibold bg-white px-3 py-2 rounded-md text-mainBlue cursor-pointer hover:border-2 hover:border-borderBlue hover:bg-transparent hover:text-white'>Get a Quote</button>
+                        {/* <p >About</p>
+                        <p>Gallery</p> */}
+                        <a href='https://wa.me/+2347018448727' target='_blank' rel='noreferrer' className='font-semibold bg-white px-3 py-2 rounded-md text-mainBlue cursor-pointer hover:border-2 hover:border-borderBlue hover:bg-transparent hover:text-white lg:px-6'>Get a Quote</a>
                     </div>
                     <div className='lg:hidden'>
                         {/* <Hamburger color='#8C8CCA' size={25} toggle={setOpen} toggled={isOpen} /> */}
