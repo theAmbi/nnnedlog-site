@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import divider from '../images/long_divider.svg';
+import divider from '/images/long_divider.svg';
 import WhatsAppBtn from './utils/WhatsAppBtn';
 // import { gsap } from 'gsap';
 import { } from 'gsap/ScrollTrigger'

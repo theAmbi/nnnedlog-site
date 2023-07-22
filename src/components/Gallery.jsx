@@ -37,7 +37,7 @@ const Gallery = () => {
                         </div>
 
                         <div className="container grid grid-cols-3 gap-3 lg:flex lg:flex-wrap">
-                            {images.map((image) => <div key={(Math.random) * 100}>
+                            {images.map((image) => <div key={id}>
                                 <img src={image} alt="nnnedlog-portrait" className="rounded-md" />
                             </div>)}
                         </div>

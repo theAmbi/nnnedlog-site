@@ -1,4 +1,4 @@
-import divider from '../../images/long_divider.svg'
+import divider from '/images/long_divider.svg'
 
 // eslint-disable-next-line react/prop-types
 export const TextHeading = ({ heading }) => {

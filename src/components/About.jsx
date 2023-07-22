@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
-import hoodie from '../images/illustrations/about/hoodie-woman.jpeg';
-import darthMaul from '../images/illustrations/about/darth-maul.jpg';
+import hoodie from '/images/illustrations/about/hoodie-woman.jpeg';
+import darthMaul from '/images/illustrations/about/darth-maul.jpg';
 import { TextHeading } from './utils/Heading';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -15,14 +15,6 @@ const About = () => {
         gsap.from(titleRef.current, {
             duration: 1,
             scale: .5,
-            opacity: 0,
-            scrollTrigger: {
-                trigger: aboutRef.current,
-                start: 'top center',
-            }
-        })
-        gsap.from(aboutContainerRef, {
-            duration: 1.3,
             opacity: 0,
             scrollTrigger: {
                 trigger: aboutRef.current,

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import About from "./components/About"
 import CallToAction from "./components/CTA"
 import Footer from "./components/Footer"
@@ -8,31 +8,29 @@ import MySocials from "./components/MySocials"
 import Navbar from "./components/Navbar"
 import ServicesOffered from "./components/Services"
 import ShopMyMerch from "./components/ShopMyMerch"
-import Preloader from './components/utils/Preloader';
+// import Preloader from './components/utils/Preloader';
 
 const App = () => {
-  const [isloading, setIsLoading] = useState(true);
+  // const [isloading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000);
+  // }, [])
   return (
     <>
-      <div className="bg-mainBlue">
-        {isloading ? <Preloader /> : <div>
-          <Navbar />
-          <Hero />
-          <About />
-          <ServicesOffered />
-          <Gallery />
-          <ShopMyMerch />
-          <MySocials />
-          <CallToAction />
-          <Footer />
-        </div>}
-      </div>
+      {/* {isloading ? <Preloader /> : <div> */}
+      <Navbar />
+      <Hero />
+      <About />
+      <ServicesOffered />
+      <Gallery />
+      <ShopMyMerch />
+      <MySocials />
+      <CallToAction />
+      <Footer />
+      {/* </div>} */}
     </>
   )
 }

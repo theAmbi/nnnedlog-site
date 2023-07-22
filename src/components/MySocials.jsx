@@ -1,8 +1,8 @@
 import { TextHeading } from "./utils/Heading";
-import instagram from '../images/logos/instagram.svg';
-import tiktok from '../images/logos/tiktok.svg';
-import twitter from '../images/logos/twitter.svg';
-import youtube from '../images/logos/youtube.svg';
+import instagram from '/images/logos/instagram.svg';
+import tiktok from '/images/logos/tiktok.svg';
+import twitter from '/images/logos/twitter.svg';
+import youtube from '/images/logos/youtube.svg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect, useRef } from "react";

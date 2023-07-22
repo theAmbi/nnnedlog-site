@@ -1,9 +1,9 @@
-import shortDivider from '../images/short_divider.svg';
-import animeBoy from '../images/illustrations/hero/anime-boy.jpg';
-import screams from '../images/illustrations/hero/screams.jpg';
-import mySide from '../images/illustrations/hero/my-side.jpg';
-import bart from '../images/illustrations/hero/bart-simpson.png';
-import jez from '../images/illustrations/hero/jez.png';
+import shortDivider from '/images/short_divider.svg';
+import animeBoy from '/images/illustrations/hero/anime-boy.jpg';
+import screams from '/images/illustrations/hero/screams.jpg';
+import mySide from '/images/illustrations/hero/my-side.jpg';
+import bart from '/images/illustrations/hero/bart-simpson.png';
+import jez from '/images/illustrations/hero/jez.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';

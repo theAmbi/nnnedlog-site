@@ -1,7 +1,7 @@
 import { TextHeading } from "./utils/Heading"
-import teepublic from '../images/logos/teepublic.svg'
-import redbubble from '../images/logos/redbubble.svg'
-import teespring from '../images/logos/teespring.svg'
+import teepublic from '/images/logos/teepublic.svg'
+import redbubble from '/images/logos/redbubble.svg'
+import teespring from '/images/logos/teespring.svg'
 import { useEffect, useRef } from "react"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'

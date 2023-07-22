@@ -1,4 +1,4 @@
-import whatsapp from '../../images/logos/whatsapp.svg';
+import whatsapp from '/images/logos/whatsapp.svg';
 
 const WhatsAppBtn = () => {
     return (
